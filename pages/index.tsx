@@ -1,5 +1,11 @@
+import Layout from 'components/Layout'
+
 export default function IndexPage() {
   return (
-    <div>Hello, Travelo!</div>
+    <Layout>
+      
+      <div>Hello, Travelo!</div>
+
+    </Layout>
   )
 }

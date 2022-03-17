@@ -7,7 +7,7 @@ interface Props {
   noFooter?: boolean
 }
 
-const Layout = ({ children, noFooter = false }: Props) => {
+const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
