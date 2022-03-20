@@ -16,8 +16,8 @@ const Header = () => {
               src={traveloLogo}
               alt="travelo logo"
               placeholder="blur"
-              height="48"
-              width="182"
+              height={48}
+              width={182}
             />
             <Search />
           </div>
