@@ -1,10 +1,12 @@
-import Image from "next/image";
-import Search from "./Search";
-import Nav from "./Nav";
-import Container from "components/Container";
-import Button from "components/Button";
+import React from 'react'
+import Image from 'next/image'
 
-import traveloLogo from "public/assets/travelo-logo-header.png";
+import Container from 'components/Container'
+import Button from 'components/Button'
+import Nav from './Nav'
+import Search from './Search'
+
+import traveloLogo from 'public/assets/travelo-logo-header.png'
 
 const Header = () => {
   return (
@@ -14,13 +16,15 @@ const Header = () => {
           <div className="flex">
             <Image
               src={traveloLogo}
-              alt="travelo logo"
+              alt="Travelo Logo"
               placeholder="blur"
-              height={48}
-              width={182}
+              height="48"
+              width="182"
             />
+
             <Search />
           </div>
+
           <div className="flex gap-5">
             <Nav />
             <Button className="w-[190px]">Masuk</Button>
@@ -28,7 +32,7 @@ const Header = () => {
         </div>
       </Container>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

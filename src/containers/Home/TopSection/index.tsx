@@ -1,7 +1,8 @@
-import styles from "./TopSection.module.css";
-import Container from "components/Container";
-import Button from "components/Button";
-import InfoItem from "./InfoItem";
+import Container from 'components/Container'
+import Button from 'components/Button'
+import InfoItem from './InfoItem'
+
+import styles from './TopSection.module.css'
 
 const TopSection = () => {
   return (
@@ -12,24 +13,26 @@ const TopSection = () => {
             <h1 className="text-heading-2 font-bold font-label text-gray-100 w-[500px] mb-8">
               Jelajahi Dunia Yang Indah Dengan Satu Sentuhan
             </h1>
-            <p className="text-heading-3 text-gray-70 w-[526px] mb-8">
-              jelajahi dunia yang indah dengan satu sentuhan dengan pesan tiket
-              di travel kamu akan dapatkan pelayanan terbaik untuk wisata
+
+            <p className="text-heading-3 text-gray-70 w-[526px] mb-7">
+              Jelajahi dunia yang indah dengan satu sentuhan dengan pesan tiket
+              di Travel kamu akan dapatkan pelayanan terbaik untuk wisata
               liburanmu kemana saja dan kapan saja
             </p>
 
-            <Button>Lihat Paket</Button>
+            <Button className="w-[190px]">Lihat Paket</Button>
           </div>
-        </div>
-        <div className="flex gap-40 mx-auto">
-          <InfoItem label="+30" subLabel="Negara" />
-          <InfoItem label="+1500" subLabel="Penginapan" />
-          <InfoItem label="+100" subLabel="Tempat Wisata" />
-          <InfoItem label="+50.000" subLabel="Pelanggan" />
+
+          <div className="flex gap-40 mx-auto">
+            <InfoItem label="+30" subLabel="Negara" />
+            <InfoItem label="+1500" subLabel="Penginapan" />
+            <InfoItem label="+100" subLabel="Tempat Wisata" />
+            <InfoItem label="+50.000" subLabel="Pelanggan" />
+          </div>
         </div>
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default TopSection;
+export default TopSection
