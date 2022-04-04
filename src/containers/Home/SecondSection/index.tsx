@@ -4,6 +4,7 @@ import Container from "components/Container";
 import PromoCarousel from "./PromoCarousel";
 import 'react-multi-carousel/lib/styles.css'
 import Packages from "./Packages";
+import Categories from "./Categories";
 
 const SecondSection = () => {
   return(
@@ -11,6 +12,7 @@ const SecondSection = () => {
     <Container>
       <PromoCarousel />
       <Packages />
+      <Categories />
     </Container>
   </section>
   ); 
